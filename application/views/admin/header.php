@@ -27,12 +27,12 @@
 
 			<div class="collapse navbar-collapse" id="bs-examplenavbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="<?php echo base_url() . 'admin'; ?>"><span class="glyphicon glyphicon-home"></span> Dashboard <span class="sronly">(current)</span></a></li>
+					<li><a href="<?php echo base_url() . 'admin'; ?>"><span class="glyphicon glyphicon-home"></span> Dashboard <span class="sronly">(current)</span></a></li>
 					<li><a href="<?php echo base_url() . 'admin/kamar'; ?>"><span class="glyphicon glyphicon-bed"></span> Data Kamar</a></li>
 					<li><a href="<?php echo base_url() . 'admin/pelanggan'; ?>"><span class="glyphicon glyphicon-user"></span> Data Pelanggan</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="<?php echo base_url() . 'admin/logout'; ?>"><span class="glyphicon glyphicon-log-out"></span> Keluar</a></li>
+					<li><a href="<?php echo base_url() . 'auth/logout'; ?>"><span class="glyphicon glyphicon-log-out"></span> Keluar</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" ariaexpanded="false"><?php echo "Hai, <b>" . $this->session->userdata('nama'); ?></b> <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="<?php echo base_url() . 'admin/ganti_password' ?>"><i class="glyphicon glyphicon-lock"></i> Ubah Password</a></li>

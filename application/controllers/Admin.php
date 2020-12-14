@@ -7,7 +7,7 @@ class Admin extends CI_Controller
 	{
 		parent::__construct();
 		// cek login
-		if ($this->session->userdata('status') != "login") {
+		if (!$this->session->userdata('username')) {
 			$alert = $this->session->set_flashdata('alert', 'Silahkan Login Dahulu');
 			redirect(base_url());
 		}
